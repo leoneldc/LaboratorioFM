@@ -16,6 +16,7 @@ import javax.swing.UIManager;
 public class MDI_LaboratorioFM extends javax.swing.JFrame {
 private MantenimeintoClientes formMClientes;
 private Mantenimiento_VideoJuegos formVideoJuegos;
+private MantenimeintoBodega fromBodega;
 
     /**
      * Creates new form MDI_LaboratorioFM
@@ -90,7 +91,12 @@ private Mantenimiento_VideoJuegos formVideoJuegos;
         });
         jMenu8.add(jMenuItem1);
 
-        jMenuItem2.setText("jMenuItem2");
+        jMenuItem2.setText("Mantenimiento Bodega");
+        jMenuItem2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuItem2ActionPerformed(evt);
+            }
+        });
         jMenu8.add(jMenuItem2);
 
         jMenuItem3.setText("jMenuItem3");
@@ -192,6 +198,12 @@ private Mantenimiento_VideoJuegos formVideoJuegos;
         formVideoJuegos.setVisible(true);
         jDesktopPane1.add(formVideoJuegos);
     }//GEN-LAST:event_jMenuItem4ActionPerformed
+
+    private void jMenuItem2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem2ActionPerformed
+        fromBodega = new MantenimeintoBodega();
+        fromBodega.setVisible(true);
+        jDesktopPane1.add (jDesktopPane1);
+    }//GEN-LAST:event_jMenuItem2ActionPerformed
 
     /**
      * @param args the command line arguments
